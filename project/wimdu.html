@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">	
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="WIMDU.css">
+	<style type="text/css">
+		input{font-family: FontAwesome, "Open Sans", Verdana, sans-serif;}
+		.continue-btn{border-radius: 0px;background-color: #016db7;}
+		.fa-home, .fa-calendar ,.fa-user, .fa-location , .fa-map-marker{color:#fbbb14;}
+		.container {
+    position: relative;
+}
+.text-block {
+    position: absolute;
+    top: 160px;
+    left: 340px;
+    background-color:#190e0e94; 
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-white navbar-primary mr-auto">
+		<a class="navbar-brand" href="#">
+			<img src="images/WIMDU.png" alt="logo" style="width:140px;">
+		</a>
+		<ul class="navbar-nav ml-auto mr-8">
+			<li class="nav-item">
+				<a class="nav-link font-weight-bold" href="help page.html">HELP</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle vertical-menu" href="#" id="navbardrop" data-toggle="dropdown">
+					<img src="images/flag.svg" style="width: 20px; height: 20px">
+				</a>
+				<div class="dropdown-menu" style="height: 200px;overflow: auto;">
+					<a class="dropdown-item" href="#"><img src="images/flag1.jpeg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Argentina</a>
+					<a class="dropdown-item" href="#"><img src="images/flag2.svg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Australia</a>
+					<a class="dropdown-item" href="#"><img src="images/flag3.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Belgie</a>
+					<a class="dropdown-item" href="#"><img src="images/flag4.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Brasil</a>
+					<a class="dropdown-item" href="#"><img src="images/flag5.jpeg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Canada</a>
+					<a class="dropdown-item" href="#"><img src="images/flag6.jpeg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Chile</a>
+					<a class="dropdown-item" href="#"><img src="images/flag7.jpeg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Colombia</a>
+					<a class="dropdown-item" href="#"><img src="images/flag8.jpeg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Costa Rica</a>
+					<a class="dropdown-item" href="#"><img src="images/flag9.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Ceska republika</a>
+					<a class="dropdown-item" href="#"><img src="images/flag10.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Danmark</a>
+					<a class="dropdown-item" href="#"><img src="images/flag11.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Deutschland</a>
+					<a class="dropdown-item" href="#"><img src="images/flag12.png" widtpn="20" height="20" class="d-inline-flax"><span class="ml-2">Espana</a>
+					<a class="dropdown-item" href="#"><img src="images/flag13.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Finland</a>
+					<a class="dropdown-item" href="#"><img src="images/flag14.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">France</a>
+					<a class="dropdown-item" href="#"><img src="images/flag15.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Hellas</a>
+					<a class="dropdown-item" href="#"><img src="images/flag16.gif" width="20" height="20" class="d-inline-flax"><span class="ml-2">Hong kong</a>
+					<a class="dropdown-item" href="#"><img src="images/flag17.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">India</a>
+					<a class="dropdown-item" href="#"><img src="images/flag18.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Indonesia</a>
+					<a class="dropdown-item" href="#"><img src="images/flag19.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Ireland</a>
+					<a class="dropdown-item" href="#"><img src="images/flag20.svg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Italia</a>
+					<a class="dropdown-item" href="#"><img src="images/flag21.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Magyarorszag</a>
+					<a class="dropdown-item" href="#"><img src="images/flag22.svg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Malaysia</a>
+					<a class="dropdown-item" href="#"><img src="images/flag23.jpeg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Mexico</a>
+					<a class="dropdown-item" href="#"><img src="images/flag24.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Nederland</a>
+					<a class="dropdown-item" href="#"><img src="images/flag25.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">New Zealand</a>
+					<a class="dropdown-item" href="#"><img src="images/flag26.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Norge</a>
+					<a class="dropdown-item" href="#"><img src="images/flag27.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Osterreich</a>
+					<a class="dropdown-item" href="#"><img src="images/flag28.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Peru</a>
+					<a class="dropdown-item" href="#"><img src="images/flag29.svg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Polska</a>
+					<a class="dropdown-item" href="#"><img src="images/flag30.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Portugal</a>
+					<a class="dropdown-item" href="#"><img src="images/flag31.svg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Rossiya</a>
+					<a class="dropdown-item" href="#"><img src="images/flag32.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Schweiz</a>
+					<a class="dropdown-item" href="#"><img src="images/flag33.gif" width="20" height="20" class="d-inline-flax"><span class="ml-2">South Africa</a>
+					<a class="dropdown-item" href="#"><img src="images/flag34.svg" width="20" height="20" class="d-inline-flax"><span class="ml-2">Sverige</a>
+					<a class="dropdown-item" href="#"><img src="images/flag35.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Taiwan</a>
+					<a class="dropdown-item" href="#"><img src="images/flag36.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Turkiye</a>
+					<a class="dropdown-item" href="#"><img src="images/flag37.jpeg" width="20" height="20" class="d-inline-flax"><span class="ml-2">USA</a>
+					<a class="dropdown-item" href="#"><img src="images/flag38.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">United Kingdom</a>
+					<a class="dropdown-item" href="#"><img src="images/flag39.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Uruguay</a>
+					<a class="dropdown-item" href="#"><img src="images/flag40.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Viet Nam</a>
+					<a class="dropdown-item" href="#"><img src="images/flag41.png" width="20" height="20" class="d-inline-flax"><span class="ml-2">Zhongguo</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link font-weight-bold dropdown-toggle "style="margin-left: 5px" href="#" id="navbardrop" data-toggle="dropdown">US$</a>
+				<div class="dropdown-menu" style="height: 200px;overflow: auto;">
+					 <table class="table table-borderless text-primary">
+    <tbody>
+      <tr>
+        <td>NZ$</td>
+        <td>NZD</td>
+      </tr>
+      <tr>
+        <td>ZL</td>
+        <td>PLN</td>
+      </tr>
+      <tr>
+        <td>pyo.</td>
+        <td>RUB</td>
+      </tr>
+      <tr>
+        <td>SEK</td>
+        <td>SEK</td>
+      </tr>
+      <tr>
+        <td>SG$</td>
+        <td>SGD</td>
+      </tr>
+      <tr>
+        <td>US$</td>
+        <td>USD</td>
+      </tr>
+      <tr>
+        <td>R</td>
+        <td>ZAR</td>
+      </tr>
+      <tr>
+        <td>TRY</td>
+        <td>TRY</td>
+      </tr>
+      <tr>
+        <td>AU$</td>
+        <td>AUD</td>
+      </tr>
+      <tr>
+        <td>CA$</td>
+        <td>CAD</td>
+      </tr>
+      <tr>
+        <td>CHF</td>
+        <td>CHF</td>
+      </tr>
+      <tr>
+        <td>DKK</td>
+        <td>DKK</td>
+      </tr>
+      <tr>
+        <td>HK$</td>
+        <td>HKD</td>
+      </tr>
+      <tr>
+        <td>JPY</td>
+        <td>JPY</td>
+      </tr>
+      <tr>
+        <td>MX$</td>
+        <td>MXN</td>
+      </tr>
+      <tr>
+        <td>NOK</td>
+        <td>NOK</td>
+      </tr>
+      <tr>
+        <td>NZ$</td>
+        <td>NZD</td>
+      </tr>
+      </tbody>
+  </table>
+</div>
+
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link font-weight-bold" href="wimdu.html">LIST YOUR PLACE</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link font-weight-bold dropdown-toggle"style="margin-left: 5px" href="#" id="navbardrop" data-toggle="dropdown">RECENTLY VIEWED</a>
+				<div class="dropdown-menu" style="height: 140px;width: 300px;  overflow: auto;">
+					<a class="dropdown-menu" href="#"></a>
+					<p class="text-center text-muted" >Log in to keep track of your previously viewed properties anytime, anywhere!</p>
+					<a  class="dropdown-item" href="#">
+						<center><button type="button" class="btn btn-outline-primary">LOG IN HERE</button></center>
+					</a>
+                </div>
+            </li>
+				<li class="nav-item">
+					<a class="nav-link font-weight-bold" href="lo.html">LOG IN</a>
+				</li>
+				<button class="btn btn-warning " type="submit" style="border-radius :40px; height: 40px; width:200px ;">PARIS,JUST ONE STEP! 
+				</button>
+			</ul>
+		</nav>
+		<div>
+			<img src="images/bg.jpg" style="width: 100%; height: 280px">
+			<div class="text-block"> 
+    <h2 class="text-center">LIST YOUR PLACE AND MAKE MONEY!
+</h2>
+    <p class="text-center">Do you have an empty apartment, spare room or a holiday home? Sign up with Wimdu<br> and start renting to guests from all over the world!
+
+</p>
+  </div>
+		</div>
+		<div class="container mb-5">
+			<div class="row">
+				<div class="col-md-8 offset-2">
+					<form class="form" role="form" style="margin-top: 80px;">
+						<div class="row">
+							<div class="col-3">
+						      <label for="email2" class="mb-2 mr-sm-5 font-weight-bold" >Property type</label>
+						    </div>
+						    <div class="col-4">
+							    <div class="input-group mb-2 mr-sm-2">
+								    <div class="input-group-prepend ">
+								      <div class="input-group-text bg-white "><i class="fa fa-home"></i></div>
+								    </div>
+								    <select class="form-control" id="exampleFormControlSelect1"  >
+							          <option>Apartment</option>
+								      <option>House</option>
+								      <option>Private room</option>
+								      <option>Chalet or cabin</option>
+								      <option>Villa</option>
+								      <option>Castle</option>
+								      <option>Farmhouse</option>
+								      <option>Treehouse</option>
+								      <option>Boat</option>
+								      <option>Car</option>
+								    </select>
+							    </div>
+						    </div>
+						</div>    
+						<div class="row mt-4">
+							<div class="col-3">
+							    <label for="email2" class="mb-2 mr-sm-5 font-weight-bold" >Accommodates</label>
+							</div>
+							<div class="col-3">
+								<div class="input-group mb-2 mr-sm-2">
+								    <div class="input-group-prepend ">
+								      <div class="input-group-text bg-white "><i class="fa fa-user"></i></div>
+								    </div>
+								    <select class="form-control" id="exampleFormControlSelect1"  >
+							          <option>1</option>
+								      <option>2</option>
+								      <option>3</option>
+								      <option>4</option>
+								      <option>5</option>
+								      <option>6</option>
+								      <option>7</option>
+								      <option>8</option>
+								      <option>9</option>
+								      <option>10</option>
+								      <option>11</option>
+								      <option>12</option>
+								      <option>13</option>
+								      <option>14</option>
+								      <option>15</option>
+								      <option>16</option>
+								      <option>17</option>
+								      <option>18</option>
+								      <option>19</option>
+								      <option>20</option>
+								    </select>
+							    </div> 
+							</div>
+					    </div>
+						<div class="row mt-4">
+							<div class="col-3">
+							    <label for="email2" class="mb-2 mr-sm-5 font-weight-bold" >Bedrooms</label>
+							</div>
+							<div class="col-3">
+								<div class="input-group mb-2 mr-sm-2">
+								    <div class="input-group-prepend ">
+								      <div class="input-group-text bg-white "><i class="fa fa-calendar"></i></div>
+								    </div>
+								    <select class="form-control" id="exampleFormControlSelect1"  >
+							          <option>1</option>
+								      <option>2</option>
+								      <option>3</option>
+								      <option>4</option>
+								      <option>5</option>
+								      <option>6</option>
+								      <option>7</option>
+								      <option>8</option>
+								      <option>9</option>
+								      <option>10</option>
+								      <option>11</option>
+								      <option>12</option>
+								      <option>13</option>
+								      <option>14</option>
+								      <option>15</option>
+								      <option>16</option>
+								      <option>17</option>
+								      <option>18</option>
+								      <option>19</option>
+								      <option>20</option>
+								    </select>
+							    </div>   
+							</div>
+					    </div>
+						<div class="row mt-4">
+							<div class="col-3">
+							    <label for="email2" class="mb-2 mr-sm-5 font-weight-bold" >Country</label>
+							</div>
+							<div class="col-3">
+								<div class="input-group mb-2 mr-sm-2">
+								    <div class="input-group-prepend ">
+								      <div class="input-group-text bg-white "><i class="fa fa-calendar"></i></div>
+								    </div>
+								    <select class="form-control" id="exampleFormControlSelect1"  >
+							          <option>Germany</option>
+								      <option>Spain</option>
+								      <option>France</option>
+								      <option>Netherlands</option>
+								      <option>Italy</option>
+								      <option>United Kingdom</option>
+								      <option>United states</option>
+								      <option>Poland</option>
+								      <option>Switzerland</option>
+								      <option>Denmark</option>
+								      <option>Afghanistan</option>
+								      <option>Albania</option>
+								      <option>Algeria</option>
+								      <option>American Samoa</option>
+								      <option>Andorra</option>
+								      <option>Angola</option>
+								      <option>Anguilla</option>
+								      <option>Antarctica</option>
+								      <option>Antigua and Barbuda</option>
+								    </select>
+							    </div>
+							</div>
+						</div>
+						<div class="row mt-4">
+							<div class="col-3">
+							    <label for="email2" class="mb-2 mr-sm-5 font-weight-bold" >City</label>
+							</div>
+							<div class="col-6">
+								<div class="input-group mb-2 mr-sm-2">
+								    <div class="input-group-prepend ">
+								      <div class="input-group-text bg-white "><i class="fa fa-map-marker"></i></div>
+								    </div>
+								    <select class="form-control" id="exampleFormControlSelect1"  >
+							          <option>Berlin,Paris,London...</option>
+								    </select>
+							    </div>
+							    
+							</div>
+						</div>
+						<div class="row mt-4">
+						    <div class="col-3">	
+					         
+					        </div>
+					        <div class="col-6">
+					        	<button type="submit" class="btn  continue-btn font-weight-bold text-white pl-5 pr-5">CONTINUE</button>
+					        </div>  
+					    </div>  
+					</form>	
+				</div>
+			</div>    
+			<div class="row mt-5">
+				<div class="col ">
+					<img class="mx-auto d-block" src="images/icon1.jpg">
+					<h6 class="text-center font-weight-bold mt-4" >EARN MONEY WITH YOUR PLACE</h6>
+					<p class="text-center text-muted font-small mt-4">Wimdu hosts earn on average 900€/month - while they sleep! Fund your next trip away or pay your bills with the extra income you make from your unused space.</p>
+				</div>
+				<div class="col">
+					<img class="mx-auto d-block" src="images/icon2.jpg" class="mr-8">
+					<h6 class="text-center font-weight-bold mt-3">YOUR DETAILS ARE SAFE</h6>
+					<p class="text-center text-muted font-small mt-4">No one other than the guests you have confirmed has access to your full name or your contact details. Only your first name and the general location of your place on the map will be visible on the website.</p>
+				</div>
+				<div class="col">
+					<img class="mx-auto d-block" src="images/icon3.jpg" class="mr-8">
+					<h6 class="text-center font-weight-bold mt-3">RECEIVE PAYMENT</h6>
+					<p class="text-center text-muted font-small mt-4">24 hours after your guests arrive and have checked in successfully, Wimdu automatically transfers your payment to your bank account. Since Wimdu takes care of the transaction, your payment is safe at all times.</p>
+				</div>
+			</div>   
+		</div>
+		<hr class="mt-5">
+<footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4">
+  <div class="container text-center text-md-left">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+        <h5 class="font-weight-bold text-uppercase mb-4">CUSTOMER SERVICE</h5>
+        <p class="text-muted">How Wimdu Works<br>FAQ & Support</p>
+        <h5 class="font-weight-bold text-uppercase mb-4">WIMDU GUEST APP</h5>
+        <img src="images/capture1.png">
+         <h5 class="font-weight-bold text-uppercase mb-4 mt-4">WIMDU HOST APP</h5>
+        <img src="images/capture1.png">
+      </div>
+      <hr class="clearfix w-100 d-md-none">
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+        <h5 class="font-weight-bold text-uppercase mb-4">ABOUT WIMDU</h5>
+        <ul class="list-unstyled text-muted">
+          <li><p>Press</p></li>
+          <li><p>Jobs</p></li>
+          <li><p>About us</p></li>
+          <li><p>Testimonials</p></li>
+          <li><p>Terms & Privacy</p></li>
+          <li><p>Imprint</p></li>
+          <li><p>Wimdu Scolarship</p></li>
+        </ul>
+      </div>
+      <hr class="clearfix w-100 d-md-none">
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+        <h5 class="font-weight-bold text-uppercase mb-4">FOLLOW US ON</h5>
+        <ul class="list-unstyled text-muted">
+          <li><p><i class="fa fa-facebook mr-3"></i> Facebook</p></li>
+          <li><p><i class="fa fa-twitter mr-3"></i> Twitter</p></li>
+          <li><p><i class="fa fa-google-plus mr-3"></i> Google+</p></li>
+          <li><p><i class="fa fa-youtube mr-3"></i> Youtube</p></li>
+          <li><p><i class=" mr-4"></i> Blog</p></li>
+        </ul>
+      </div>
+      <hr class="clearfix w-100 d-md-none">
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+        <h5 class="font-weight-bold text-uppercase mb-4">SECURE PAYMENT</h5>
+       <img src="images/capture2.png">
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
